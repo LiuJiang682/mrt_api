@@ -1,4 +1,4 @@
-package au.gov.vic.ecodev.mrt.api.constants;
+package au.gov.vic.ecodev.mrt.constants;
 
 public enum LogSeverity {
 

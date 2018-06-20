@@ -1,6 +1,6 @@
 package au.gov.vic.ecodev.mrt.template.processor.context;
 
-import au.gov.vic.ecodev.mrt.api.constants.LogSeverity;
+import au.gov.vic.ecodev.mrt.constants.LogSeverity;
 import au.gov.vic.ecodev.mrt.map.services.MapServices;
 import au.gov.vic.ecodev.mrt.template.criteria.TemplateCriteria;
 import au.gov.vic.ecodev.mrt.template.processor.exception.TemplateProcessorException;

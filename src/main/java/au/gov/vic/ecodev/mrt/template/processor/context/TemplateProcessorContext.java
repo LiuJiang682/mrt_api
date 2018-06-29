@@ -3,6 +3,7 @@ package au.gov.vic.ecodev.mrt.template.processor.context;
 import au.gov.vic.ecodev.mrt.constants.LogSeverity;
 import au.gov.vic.ecodev.mrt.map.services.MapServices;
 import au.gov.vic.ecodev.mrt.template.criteria.TemplateCriteria;
+import au.gov.vic.ecodev.mrt.template.loader.fsm.model.Message;
 import au.gov.vic.ecodev.mrt.template.processor.exception.TemplateProcessorException;
 import au.gov.vic.ecodev.mrt.template.processor.model.Template;
 import au.gov.vic.ecodev.mrt.template.properties.TemplateProperties;
@@ -21,4 +22,6 @@ public interface TemplateProcessorContext {
 
 	TemplateProperties search(final TemplateCriteria criteria) throws TemplateProcessorException;
 	MapServices getMapServices();
+	
+	Message getMessage();
 }

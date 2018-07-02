@@ -34,4 +34,7 @@ public interface Message {
 	
 	public List<String> getBoreHoleIdsOutSideTenement();
 	public void setBoreHoleIdsOutSideTenement(final List<String> boreHoleIds);
+	
+	public List<String> getSampleIdsOutSideTenement();
+	public void setSampleIdsOutSideTenement(final List<String> sampleIds);
 }

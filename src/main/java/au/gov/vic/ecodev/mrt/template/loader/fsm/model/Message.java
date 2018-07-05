@@ -2,6 +2,7 @@ package au.gov.vic.ecodev.mrt.template.loader.fsm.model;
 
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 public interface Message {
 
@@ -24,17 +25,23 @@ public interface Message {
 	public void setFailedFiles(final List<File> failedFileNames);
 	
 	public String getLogFileName();
-	public void setLogFileName(String logFileName);
+	public void setLogFileName(final String logFileName);
 	
 	public String getDirectErrorMessage();
-	public void setDirectErrorMessage(String string);
+	public void setDirectErrorMessage(final String string);
 	
-	public String getTemplateOwnerEmail();
-	public void setTemplateOwnerEmail(final String owenerEmail);
+	public List<Map<String, Object>> getTemplateOwnerEmail();
+	public void setTemplateOwnerEmail(final List<Map<String, Object>> owenerEmails);
 	
 	public List<String> getBoreHoleIdsOutSideTenement();
 	public void setBoreHoleIdsOutSideTenement(final List<String> boreHoleIds);
 	
 	public List<String> getSampleIdsOutSideTenement();
 	public void setSampleIdsOutSideTenement(final List<String> sampleIds);
+	
+	public String getPassedFileDirectory();
+	public void setPassedFileDirectory(final String directoryName);
+	
+	public String getFailedFileDirectory();
+	public void setFailedFileDirectory(final String directoryName);
 }

@@ -12,6 +12,9 @@ public interface Message {
 	public List<String> getFileNames();
 	public void setFileNames(final List<String> fileNames);
 	
+	public List<String> getAbsoluteFileNames();
+	public void setAbsoluteFileNames(final List<String> absolutionFileNames);
+	
 	public List<String> getTemplateClasses();
 	public void setTemplateClasses(final List<String> templateClasses);
 	

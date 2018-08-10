@@ -47,4 +47,7 @@ public interface Message {
 	
 	public String getFailedFileDirectory();
 	public void setFailedFileDirectory(final String directoryName);
+	
+	public String getEmailSubject();
+	public void setEmailSubject(final String subject);
 }

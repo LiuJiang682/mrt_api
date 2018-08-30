@@ -50,4 +50,7 @@ public interface Message {
 	
 	public String getEmailSubject();
 	public void setEmailSubject(final String subject);
+	
+	public String getWebUrl();
+	public void setWebUrl(final String webUrl);
 }
